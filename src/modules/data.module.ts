@@ -7,4 +7,4 @@ import { dataService } from "./data.service";
   controllers: [requestController],
   providers: [dataService],
 })
-export class RequestModule {}
+export class dataModule {}
