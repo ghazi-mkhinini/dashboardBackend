@@ -9,9 +9,9 @@ export class dataService{
   
 
   
-  getPieData(data:pieDataDto){
+  getPieData(body){
     //console.log("request Service Responding message: "+pieData[0])
-    return data;
+    return body;
   }
 
   setPieData(data:pieDataDto){

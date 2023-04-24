@@ -7,10 +7,9 @@ export class requestController{
     constructor(private readonly dataService:dataService){}
 
     @Get('')
-    @UsePipes(ValidationPipe)
-    getPieData(@Body() pieData:pieDataDto)
+    getPieData(@Body() body)
     {
-        return this.dataService.getPieData(pieData);
+        return this.dataService.getPieData(body);
     }
 
     @Post('')

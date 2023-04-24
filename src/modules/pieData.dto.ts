@@ -19,7 +19,7 @@ export class pieDataDto{
     value: number;
 
     @IsNotEmpty()
-    @Length(1,20,{message:"the color is incorrect"})
+    @Length(1,25,{message:"the color is incorrect"})
     @IsString()
     color: string;
 
