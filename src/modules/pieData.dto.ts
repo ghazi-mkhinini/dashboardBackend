@@ -4,8 +4,9 @@ import { IsNotEmpty, IsNumber, IsString, Length } from "class-validator";
 export class pieDataDto{
 
     @IsNotEmpty({message:"id field must be not empty"})
-    @IsNumber()
-    id: number;
+    @Length(1)
+    @IsString()
+    id: string;
 
     @IsNotEmpty()
     @Length(1)

@@ -1,4 +1,6 @@
-export const pieData = [
+import { pieDataDto } from "src/modules/pieData.dto";
+
+export let pieData :pieDataDto[]= [
   {
     id: 'elixir',
     label: 'elixir',

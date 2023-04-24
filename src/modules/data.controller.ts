@@ -14,9 +14,10 @@ export class requestController{
     }
 
     @Post('')
-    createPieData()
+    @UsePipes(ValidationPipe)
+    createPieData(@Body() pieData:pieDataDto)
     {
-
+        return this.dataService.setPieData(pieData);
     }
 
 
