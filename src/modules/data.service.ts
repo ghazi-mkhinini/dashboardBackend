@@ -1,5 +1,5 @@
 import { Body, Injectable } from "@nestjs/common";
-import  {PieData}  from "../data/pieData";
+import  {pieData}  from "../data/pieData";
 
 
 
@@ -8,7 +8,7 @@ export class dataService{
   
 
   getData(@Body() data){
-    console.log("request Service Responding message: "+PieData[0])
-    return PieData[0];
+    console.log("request Service Responding message: "+pieData[0])
+    return pieData[0];
   }
 }

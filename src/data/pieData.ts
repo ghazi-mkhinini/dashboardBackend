@@ -1,4 +1,4 @@
-export const PieData = [
+export const pieData = [
   {
     id: 'elixir',
     label: 'elixir',

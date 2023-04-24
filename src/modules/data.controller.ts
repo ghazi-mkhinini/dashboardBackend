@@ -6,9 +6,9 @@ export class requestController{
     constructor(private readonly dataService:dataService){}
 
     @Get('')
-    getRequest(@Body() data)
+    getRequest(@Body() pieData)
     {
-        return this.dataService.getData(data);
+        return this.dataService.getData(pieData);
     }
 
 
