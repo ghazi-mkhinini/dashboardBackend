@@ -8,9 +8,15 @@ export class requestController{
 
     @Get('')
     @UsePipes(ValidationPipe)
-    getRequest(@Body() pieData:pieDataDto)
+    getPieData(@Body() pieData:pieDataDto)
     {
-        return this.dataService.getData(pieData);
+        return this.dataService.getPieData(pieData);
+    }
+
+    @Post('')
+    createPieData()
+    {
+
     }
 
 
