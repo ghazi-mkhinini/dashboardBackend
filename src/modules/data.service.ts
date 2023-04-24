@@ -1,5 +1,5 @@
-import { Body, Injectable, UsePipes, ValidationPipe } from "@nestjs/common";
-import  {pieData}  from "../data/pieData";
+import { Injectable } from "@nestjs/common";
+import  { pieData }  from "../data/pieData";
 import { pieDataDto } from "./pieData.dto";
 
 
@@ -8,9 +8,9 @@ import { pieDataDto } from "./pieData.dto";
 export class dataService{
   
 
-  @UsePipes(ValidationPipe)
-  getData(@Body() data:pieDataDto){
-    console.log("request Service Responding message: "+pieData[0])
+  
+  getData(data:pieDataDto){
+    //console.log("request Service Responding message: "+pieData[0])
     return data;
   }
 }

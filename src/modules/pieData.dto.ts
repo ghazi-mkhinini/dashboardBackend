@@ -1,5 +1,4 @@
-import { IsNotEmpty, IsNotIn, IsNumber, IsString, Length } from "class-validator";
-
+import { IsNotEmpty, IsNumber, IsString, Length } from "class-validator";
 
 
 export class pieDataDto{
@@ -8,15 +7,18 @@ export class pieDataDto{
     @IsNumber()
     id: number;
 
+    @IsNotEmpty()
     @Length(1)
     @IsString()
     label: string;
 
+    
     @IsNotEmpty({message:"id field must be not empty"})
     @IsNumber({allowNaN:false,allowInfinity:false},{message:"value is incorrect"})
     value: number;
 
-    @Length(1,10,{message:"the color is incorrect"})
+    @IsNotEmpty()
+    @Length(1,20,{message:"the color is incorrect"})
     @IsString()
     color: string;
 
