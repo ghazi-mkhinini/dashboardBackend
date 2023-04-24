@@ -2,7 +2,7 @@ import { IsNotEmpty, IsNotIn, IsNumber, IsString, Length } from "class-validator
 
 
 
-export class dataDto{
+export class pieDataDto{
 
     @IsNotEmpty({message:"id field must be not empty"})
     @IsNumber()
