@@ -9,7 +9,7 @@ export class dataService{
   
 
   
-  getPieData(body){
+  getPieData(body:any){
     //console.log("request Service Responding message: "+pieData[0])
     return body;
   }
